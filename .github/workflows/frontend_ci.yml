@@ -9,6 +9,9 @@ on:
   # Automatically on pushes to main branch
   push:
     branches:
+      - dev
+    pull_request:
+      branches:
       - main
     paths: # Only trigger if changes are in the frontend directory
       - 'frontend/**'
